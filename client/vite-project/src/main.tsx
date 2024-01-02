@@ -5,6 +5,7 @@ import { Provider } from 'react-redux'
 import {store} from './redux/store.js'
 import { ApolloClient, InMemoryCache, ApolloProvider,HttpLink,from} from '@apollo/client';
 import { onError } from "@apollo/client/link/error";
+import './main.css'
 const api = 'http://localhost:4500/graphql'
 console.log('this is api ',api);
 const errorLink = onError(({ graphQLErrors, networkError }) => {
