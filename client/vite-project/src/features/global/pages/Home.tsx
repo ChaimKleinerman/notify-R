@@ -1,7 +1,10 @@
-import {Wrapper,Container,Span,Overlap,TextWrapper} from '../../../components-style/global.js'
-import {ManageYourTask,OverlapGroup,WorkInProgress,LogoNotifyR} from '../../../components-style/homePage.js'
+import {Wrapper,Container,Span,ButtonY,TextWrapper,LogoNotifyR,Image} from '../../components-style/global.js'
+import {ManageYourTask,OverlapGroup} from '../../components-style/homePage.js'
+import { useNavigate } from "react-router-dom";
 
 const Home = () => {
+  const navigate = useNavigate();
+
   return (
     <Wrapper>
       <Container>
@@ -13,11 +16,11 @@ const Home = () => {
           </Span>
           <Span color = '#fed36a'> Notify-R</Span>
         </ManageYourTask>
-        <Overlap>
-          <TextWrapper>Let’s Start</TextWrapper>
-        </Overlap>
+        <ButtonY>
+          <TextWrapper onClick={()=>{navigate('/taskDetails')}}>Let’s Start</TextWrapper>
+        </ButtonY>
         <OverlapGroup>
-          <WorkInProgress alt="Work in progress" src="./a.jpg"/>
+          <Image alt="Work in progress" src="./a.jpg"/>
         </OverlapGroup>
       </Container>
       <LogoNotifyR alt="Urgent bro" src="notify-R.jpg"/>

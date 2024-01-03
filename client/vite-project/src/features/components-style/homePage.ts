@@ -12,7 +12,7 @@ export const ManageYourTask = styled.p`
   top: 504px;
 `;
 
-export const WorkInProgress = styled.img`
+export const image = styled.img`
   height: 320px;
   left: 5px;
   position: absolute;
@@ -21,14 +21,7 @@ export const WorkInProgress = styled.img`
 `;
 
 
-export const LogoNotifyR = styled.img`
-  height: 48px;
-  left: 20px;
-  position: absolute;
-  top: 20px;
-  width: 61px;
-  border-radius: 50px;
-`;
+
 
 export const OverlapGroup = styled.div`
   background-color: #ffffff;
@@ -36,7 +29,10 @@ export const OverlapGroup = styled.div`
   left: 26px;
   position: absolute;
   top: 123px;
-  width: 750px;
+  width: 339px;
+  @media (min-width: 781px) {
+    width: 750px;
+  }
 `;
 
 
