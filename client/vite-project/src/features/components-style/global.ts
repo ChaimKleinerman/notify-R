@@ -24,7 +24,7 @@ export const ButtonY = styled.div`
   height: 40px;
   left: 40px;
   position: absolute;
-  top: 809px;
+  top: 750px;
   width: 300px;
   @media (min-width: 781px) {
     width: 476px;
@@ -104,8 +104,8 @@ export const Frame = styled.div<FrameProps>`
 export const TextFrame = styled.div<TextFrameProps>`
   width: ${(props) => props.width || "700px"};
   height: ${(props) => props.height || "64px"};
-  left: ${(props) => props.left || "60px"};
-  top: ${(props) => props.top || "221px"};
+  left: ${(props) => props.left || "126px"};
+  top: ${(props) => props.top || "240px"};
   position: ${(props) => props.position || "absolute"};
   color: ${(props) => props.color || "white"};
   font-size: ${(props) => props.fontSize || "20px"};
