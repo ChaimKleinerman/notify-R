@@ -17,7 +17,7 @@ const Home = () => {
           <Span color = '#fed36a'> Notify-R</Span>
         </ManageYourTask>
         <ButtonY>
-          <TextWrapper onClick={()=>{navigate('/register')}}>Let’s Start</TextWrapper>
+          <TextWrapper onClick={()=>{navigate('/login')}}>Let’s Start</TextWrapper>
         </ButtonY>
         <OverlapGroup>
           <Image alt="Work in progress" src="./a.jpg"/>

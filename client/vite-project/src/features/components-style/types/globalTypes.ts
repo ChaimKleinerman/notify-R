@@ -48,4 +48,5 @@ export type FrameProps ={
     fontWeight?: string;
     lineHeight?: string;
     wordWrap?: string;
+    cursor?: string;
   }

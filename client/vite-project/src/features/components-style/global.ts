@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import  {StyledDivProps, image,FrameProps, TextFrameProps} from './types/globalTypes.js';
-
+import { UseFormRegisterReturn } from 'react-hook-form';
 export const Wrapper = styled.div`
   background-color: #212832;
   display: flex;
@@ -19,13 +19,14 @@ export const Span = styled.span`
 color: ${(props) => props.color || "#ffffff"};
 `;
 
-export const ButtonY = styled.div`
+export const ButtonY = styled.button<StyledDivProps>`
   background-color: #fed36a;
   height: 40px;
   left: 40px;
   position: absolute;
-  top: 750px;
+  top: ${(props) => props.top || "750px"};
   width: 300px;
+  
   @media (min-width: 781px) {
     width: 476px;
     height: 67px;
@@ -85,6 +86,7 @@ export const StyledDiv = styled.div<StyledDivProps>`
   line-height: ${(props) => props.lineHeight || 'inherit'};
   word-wrap: ${(props) => props.wordWrap || 'normal'};
   text-align: ${(props) => props.textAlign || 'center'};
+  display:flex;
 `;
 
 export const Frame = styled.div<FrameProps>`
@@ -113,10 +115,30 @@ export const TextFrame = styled.div<TextFrameProps>`
   font-weight: ${(props) => props.fontWeight || "400"};
   line-height: ${(props) => props.lineHeight || "52px"};
   word-wrap: ${(props) => props.wordWrap || "break-word"};
+  cursor: ${(props) => props.cursor || 'auto'};
   @media(max-width: 780px){
     width: 200px;
     font-size: 12px;
     line-height: 26px;
    
+  }
+`;
+
+
+
+export const Input = styled.input<FrameProps>`
+  width: ${(props) => props.width || '300px'};
+  height: ${(props) => props.height || '45px'};
+  left: ${(props) => props.left || '40px'};
+  top: ${(props) => props.top || '280px'};
+  position: ${(props) => props.position || 'absolute'};
+  background: ${(props) => props.background || '#455A64'};
+  padding: 10px;
+  border: 1px solid #ccc;
+
+  @media (min-width: 780px) {
+    width: 476px;
+    height: 40px;
+    left: 80px;
   }
 `;

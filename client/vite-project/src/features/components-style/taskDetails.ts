@@ -19,8 +19,8 @@ export const FrameTask1 = styled.div<FrameTaskProps>`
   position: ${(props) => props.position || "absolute"};
   background: ${(props) => props.background || "#455A64"};
   @media (max-width: 781px) {
-    width: 100px;
-    height: 40px;
+    width: 140px;
+    height: 100px;
   }
 `;
 
@@ -31,6 +31,7 @@ export const FrameTask2 = styled.div<FrameTaskProps>`
   top: ${(props) => props.top || "713px"};
   position: ${(props) => props.position || "absolute"};
   background: ${(props) => props.background || "#FED36A"};
+  display: flex;
     @media (max-width: 781px) {
         width: 51px;
         height: 40px;
