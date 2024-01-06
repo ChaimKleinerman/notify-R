@@ -8,7 +8,8 @@ import {
   TextFrame,
   TextWrapper,
   ButtonY,
-  Input
+  Input,
+  Span
 } from '../../components-style/global.js';
 import { User } from '../types/UserInfo.js';
 export default function Register() {
@@ -23,7 +24,7 @@ export default function Register() {
   
 
   return (
-    <Wrapper>
+    <>
       <Container>
         <form onSubmit={handleSubmit(onSubmit)}>
           <StyledDiv
@@ -60,9 +61,8 @@ export default function Register() {
             {...register("password")}
           />
             <TextFrame color="#8CAAB9" fontSize="12px" top="500px">
-         Don't have an account? 
+         Don't have an account? <Span color='#fed36a' onClick={()=>navigate('/register')}>Sign up</Span>
         </TextFrame>
-        <TextFrame fontSize="16px" top="500px" color='#fed36a' left='255px' cursor='pointer' onClick={()=>{navigate('/register')}} >Sign Up</TextFrame>
           <ButtonY type="submit">
             <TextWrapper>Log in</TextWrapper>
           </ButtonY>
@@ -76,6 +76,6 @@ export default function Register() {
           navigate(-1);
         }}
       />
-    </Wrapper>
+      </>
   );
 }

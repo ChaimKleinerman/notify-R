@@ -32,8 +32,5 @@ export const FrameTask2 = styled.div<FrameTaskProps>`
   position: ${(props) => props.position || "absolute"};
   background: ${(props) => props.background || "#FED36A"};
   display: flex;
-    @media (max-width: 781px) {
-        width: 51px;
-        height: 40px;
-    }
+  
 `;

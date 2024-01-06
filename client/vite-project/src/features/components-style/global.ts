@@ -1,6 +1,5 @@
 import styled from "styled-components";
-import  {StyledDivProps, image,FrameProps, TextFrameProps} from './types/globalTypes.js';
-import { UseFormRegisterReturn } from 'react-hook-form';
+import  {StyledDivProps, image,FrameProps, TextFrameProps, ParagraphProps} from './types/globalTypes.js';
 export const Wrapper = styled.div`
   background-color: #212832;
   display: flex;
@@ -17,6 +16,18 @@ export const Container = styled.div`
 `;
 export const Span = styled.span`
 color: ${(props) => props.color || "#ffffff"};
+`;
+
+export const Paragraph = styled.p<ParagraphProps>`
+  color: ${props => props.color || 'transparent'};
+  font-family: ${props => props.fontFamily || '"Pilat Extended-Regular", Helvetica'};
+  font-size: ${props => props.fontSize || '50px'};
+  font-weight: ${props => props.fontWeight || 700};
+  left: ${props => props.left || '26px'};
+  letter-spacing: ${props => props.letterSpacing || '0'};
+  line-height: ${props => props.lineHeight || '60px'};
+  position: ${props => props.position || 'absolute'};
+  top: ${props => props.top || '504px'};
 `;
 
 export const ButtonY = styled.button<StyledDivProps>`
@@ -73,20 +84,20 @@ export const Image = styled.img<image>`
   }
 `;
 export const StyledDiv = styled.div<StyledDivProps>`
-  width: ${(props) => props.width || 'auto'};
-  height: ${(props) => props.height || 'auto'};
-  left: ${(props) => props.left || 'auto'};
-  top: ${(props) => props.top || 'auto'};
-  position: ${(props) => props.position || 'static'};
+  width: ${(props) => props.width || '231px'};
+  height: ${(props) => props.height || '39px'};
+  left: ${(props) => props.left || '34px'};
+  top: ${(props) => props.top || '132px'};
+  position: ${(props) => props.position || 'absolute'};
   background: ${(props) => props.background || 'transparent'};
-  color: ${(props) => props.color || '#ffffff'};
-  font-size: ${(props) => props.fontSize || 'inherit'};
-  font-family: ${(props) => props.fontFamily || 'inherit'};
-  font-weight: ${(props) => props.fontWeight || 'inherit'};
-  line-height: ${(props) => props.lineHeight || 'inherit'};
-  word-wrap: ${(props) => props.wordWrap || 'normal'};
+  color: ${(props) => props.color || 'white'};
+  font-size: ${(props) => props.fontSize || '36px'};
+  font-family: ${(props) => props.fontFamily || 'Inter'};
+  font-weight: ${(props) => props.fontWeight || '600'};
+  line-height: ${(props) => props.lineHeight || '27.5px'};
+  word-wrap: ${(props) => props.wordWrap || 'break-word'};
   text-align: ${(props) => props.textAlign || 'center'};
-  display:flex;
+  display: flex;
 `;
 
 export const Frame = styled.div<FrameProps>`
@@ -106,7 +117,7 @@ export const Frame = styled.div<FrameProps>`
 export const TextFrame = styled.div<TextFrameProps>`
   width: ${(props) => props.width || "700px"};
   height: ${(props) => props.height || "64px"};
-  left: ${(props) => props.left || "126px"};
+  left: ${(props) => props.left || "85px"};
   top: ${(props) => props.top || "240px"};
   position: ${(props) => props.position || "absolute"};
   color: ${(props) => props.color || "white"};

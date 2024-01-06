@@ -25,17 +25,6 @@ export default function Register() {
       <Container>
         <form onSubmit={handleSubmit(onSubmit)}>
           <StyledDiv
-            width="231px"
-            height="39px"
-            left="34px"
-            top="132px"
-            position="absolute"
-            color="white"
-            fontSize="36px"
-            fontFamily="Inter"
-            fontWeight="600"
-            lineHeight="27.5px"
-            wordWrap="break-word"
           >
             Create your account
           </StyledDiv>

@@ -1,16 +1,5 @@
 import styled from "styled-components";
 
-export const ManageYourTask = styled.p`
-  color: transparent;
-  font-family: "Pilat Extended-Regular", Helvetica;
-  font-size: 50px;
-  font-weight: 700;
-  left: 26px;
-  letter-spacing: 0;
-  line-height: 60px;
-  position: absolute;
-  top: 504px;
-`;
 
 export const image = styled.img`
   height: 320px;

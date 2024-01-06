@@ -50,3 +50,14 @@ export type FrameProps ={
     wordWrap?: string;
     cursor?: string;
   }
+  export type ParagraphProps = {
+    color?: string;
+    fontFamily?: string;
+    fontSize?: string;
+    fontWeight?: number;
+    left?: string;
+    letterSpacing?: string;
+    lineHeight?: string;
+    position?: string;
+    top?: string;
+  }

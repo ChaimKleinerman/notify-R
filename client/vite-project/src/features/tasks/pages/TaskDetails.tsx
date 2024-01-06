@@ -35,14 +35,15 @@ const taskDetails: React.FC = () => {
       <StyledDiv left="44px" top="641px" position="absolute" color="white" fontSize="36px" fontFamily="Inter" fontWeight="600" lineHeight="27.5px" wordWrap="break-word">
         Time & Date
       </StyledDiv>
-<FrameTask1/>
-<FrameTask2 />
+
+<FrameTask2 background='#455A64' left='90px' width='160px'/>
+<FrameTask2/>
       <TextFrame width="101px" height="38px" left="131px" top="723px" position="absolute"  color="white" fontSize="18px" fontFamily="Inter" fontWeight="500" lineHeight="27.5px" wordWrap="break-word">
         10:30 AM
       </TextFrame>
-      <FrameTask1 width="51px" height="56px" left="272px" top="713px" position="absolute" background="#FED36A" />
+      <FrameTask2 width="51px" height="56px" left="272px" top="713px" position="absolute" background="#FED36A" />
 
-     <FrameTask1 width="168px" height="56px" left="323px" top="713px" position="absolute" background="#455A64" />
+     <FrameTask2 width="168px" height="56px" left="323px" top="713px" position="absolute" background="#455A64" />
       <TextFrame width="118px" height="38px" left="349px" top="723px" position="absolute"  color="white" fontSize="18px" fontFamily="Inter" fontWeight="500" lineHeight="27.5px" wordWrap="break-word">
         15/11/2022
       </TextFrame>
